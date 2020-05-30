@@ -1,0 +1,18 @@
+div#a{
+    background-color: blueviolet;
+    width: 1px;
+    height: 1px;
+    position: fixed;
+    top: 126px;
+    left: 242px;
+    z-index: 9999;
+}
+
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    
+  }
