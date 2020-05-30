@@ -6,9 +6,17 @@ div#a{
     top: 126px;
     left: 242px;
     z-index: 9999;
+    /* Just a joke. An dead pixel.*/
 }
 
-.dot {
+
+
+div#welcome{
+    margin: auto;
+    width: 50%;
+    position: fixed;
+}
+.dot {   
     height: 25px;
     width: 25px;
     background-color: #bbb;
