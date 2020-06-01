@@ -18,6 +18,12 @@ div#welcome{
     width: 100px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.219);
 }
+input#input{
+    margin: auto;
+  width: 60%;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
 .dot {   
     height: 25px;
     width: 25px;

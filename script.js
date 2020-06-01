@@ -19,7 +19,7 @@
 */
 
 function jogar() {
-    let move = document.getElementById("abc");
+    let move = document.getElementsByClassName("dot");
     var game1 = Math.floor(Math.random() * 3) + 1;
     var game2 = Math.floor(Math.random() * 3) + 1;
     var winner = parseFloat((game1 * game2 / 3).toFixed(4));
@@ -42,7 +42,7 @@ function jogar() {
 
         case 0.6667:
             console.log("Papel: \n0.6667");
-            move.src = "papel.jpg"
+            move.src = "paper.jpg"
             break;
 
         case 1:
