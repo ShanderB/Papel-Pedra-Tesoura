@@ -1,4 +1,4 @@
-div#a{
+/*div#a{
     background-color: blueviolet;
     width: 1px;
     height: 1px;
@@ -6,15 +6,17 @@ div#a{
     top: 126px;
     left: 242px;
     z-index: 9999;
-    /* Just a joke. An dead pixel.*/
-}
-
-
-
+    /* Just a joke. An dead pixel.
+}*/
 div#welcome{
     margin: auto;
-    width: 50%;
-    position: fixed;
+    /* border: 3px solid #73AD21;*/
+    padding: 10px;
+    background: purple;
+    border-radius: 10px;
+    height: 60px;
+    width: 100px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.219);
 }
 .dot {   
     height: 25px;
@@ -22,5 +24,4 @@ div#welcome{
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
-    
-  }
+}
