@@ -19,7 +19,7 @@
 */
 
 function jogar() {
-    let move = document.getElementsByClassName("dot");
+    var movimento = document.getElementById("winner");
     var game1 = Math.floor(Math.random() * 3) + 1;
     var game2 = Math.floor(Math.random() * 3) + 1;
     var winner = parseFloat((game1 * game2 / 3).toFixed(4));
@@ -27,7 +27,9 @@ function jogar() {
     The var "winner" will receive the calculus as an float fixed with 5 numbers;*/
 
     switch (winner) {
-        
+        //Fazer aparecer os dois jogadores.
+        //Adicionar counter
+        //
         case 0.3333:
             console.log("Empate: \n0.333");
             break;
@@ -42,15 +44,17 @@ function jogar() {
 
         case 0.6667:
             console.log("Papel: \n0.6667");
-            move.src = "paper.jpg"
+            movimento.src = 'paper.png';
             break;
 
         case 1:
             console.log("Tesoura: \n1");
+            movimento.src = 'scissor.png';
             break;
 
         case 2:
             console.log("Pedra \n2");
+            movimento.src = 'rock.png';
             break;
 
         default:
@@ -62,4 +66,3 @@ function jogar() {
 }
 
 
-//<img src="papel.jpg" height="200px" width="200px"></img>
