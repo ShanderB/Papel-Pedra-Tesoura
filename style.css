@@ -33,7 +33,11 @@ input#input2{
 }
 
 img#winner{
-    border: 3px solid #73AD21;
+   
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    padding: 100px;
 }
 
 /*.dot {    bolinhas para inserir algo  dentro
