@@ -4,14 +4,7 @@
 2 = pedra
 3 = tesoura
 
-papel WIN pedra
-papel LOST tesoura
-
-pedra WiN tesoura
-pedra LOST papel
-
-tesoura WIN papel
-tesoura LOST pedra
+// separar o que vai imprimir o vencedor e o que definirá o 
 
 1*1/3=0,3333--
 1*2/3=0,6667
@@ -24,17 +17,22 @@ tesoura LOST pedra
 */
 let pointA = 0;
 let pointB = 0;
+
+
+
+
+
 function jogar() {
-    var movimento = document.getElementById("winner");
-    var player1 = document.getElementById("player1");
-    var player2 = document.getElementById("player2");
     var point = document.getElementById("point");
     var pointE = document.getElementById("pointE");
+    var player1 = document.getElementById("player1");
+    var player2 = document.getElementById("player2");
+
 
     player1.src = "blank.jpg";
     player2.src = "blank.jpg";
-    movimento.src = "blank.jpg";
-    
+
+
 
     var game1 = Math.floor(Math.random() * 3) + 1;
     var game2 = Math.floor(Math.random() * 3) + 1;
@@ -43,10 +41,9 @@ function jogar() {
         The var "winner" will receive the calculus as an float fixed with 5 numbers;*/
 
     switch (winner) {
-        //Fazer aparecer os dois jogadores.
-        //Adicionar counter
-        //Vai pegar qual sinal foi feito, se empatou, ganhou ou perdeu e checar o game1/2 conforme o valor final
-        // separar o que vai imprimir o vencedor e o que definirá o vencedor
+
+
+
         case 0.3333:
             console.log("Empate: \n0.333");
             player1.src = "paper_draw.png";
@@ -74,7 +71,7 @@ function jogar() {
                 point.innerHTML = pointA;
             } else {
                 player2.src = "paper.png";
-                player1.src = "rock.png"
+                player1.src = "rock.png";
                 pointB = pointB + 1;
                 pointE.innerHTML = pointB;
             }
@@ -90,7 +87,7 @@ function jogar() {
                 point.innerHTML = pointA;
             } else {
                 player2.src = "scissor.png";
-                player1.src = "paper.png"
+                player1.src = "paper.png";
                 pointB = pointB + 1;
                 pointE.innerHTML = pointB;
             }
@@ -105,7 +102,7 @@ function jogar() {
                 point.innerHTML = pointA;
             } else {
                 player2.src = "rock.png";
-                player1.src = "scissor.png"
+                player1.src = "scissor.png";
                 pointB = pointB + 1;
                 pointE.innerHTML = pointB;
             }
